@@ -164,6 +164,7 @@ li {
 }
 
 .buttons a {
+  cursor: pointer;
   display: inline-block;
   font-size: 20px;
   text-indent: -9999px; 
