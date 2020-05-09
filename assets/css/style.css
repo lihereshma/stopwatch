@@ -84,6 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
+  background-color: #5a5d5a;
   font-family: sans-serif;
 }
 
@@ -104,51 +105,121 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+.timer { margin: 0px 30px 50px; }
+.buttons { margin-bottom: 30px; }
+.buttons div, .content { position: absolute; }
+.buttons div:nth-of-type(2), .buttons div:nth-of-type(3) { bottom: 35px; }
+.buttons div:nth-of-type(1) { left: 20%; }
+.buttons div:nth-of-type(2) { bottom: 10px; }
+.buttons div:nth-of-type(3) { right: 20%; }
+.result::-webkit-scrollbar { width: 7px; }
+.result::-webkit-scrollbar-thumb { background-color: #02b79f; }
+.result::-webkit-scrollbar-track, .result::-webkit-scrollbar-thumb { border-radius: 10px; }
 
+.buttons a:hover::before { 
+  -webkit-box-shadow: inset 1px 1px 10px #7c7c7c; 
+  box-shadow: inset 1px 1px 10px #7c7c7c; 
+}
 
+.content {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  text-align: center;
+}
 
+.stopwatch {
+  padding: 85px 0px;
+  border-radius: 50%;  
+  margin: 30px 0;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 0px 20px #000;
+  box-shadow: 1px 0px 20px #000;
+}
 
+.time {  
+  color: #259399;
+  font-size: 50px;
+}
 
+.buttons, .liRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
 
+.buttons a {
+  display: inline-block;
+  font-size: 20px;
+  text-indent: -9999px; 
+}
 
+.buttons a::before{
+  border-radius: 50%;
+  background-color: #b3d7cd;
+  color: #b45a4d;
+  float: right; 
+  font-family: FontAwesome;
+  text-indent: 0;  
+  -webkit-transition: all .5s ease;  
+  -o-transition: all .5s ease;  
+  transition: all .5s ease;
+}
 
+.start::before {
+  content: "\f04b";
+  padding: 10px 11px 10px 16px;
+}
+
+.reset::before {
+  content: "\f01e";
+  padding: 10px 12px;
+}
+
+.lap::before {
+  content: "\f017";
+  padding: 9px 11px;
+}
+
+.stop::before {
+  content: "\f04c";
+  padding: 10px 12px;
+}
+
+.lap_info { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.result {
+  max-height: 200px;
+  border-radius: 5px;
+  display: block;  
+  background-color: #b3d7cd;
+  color: #b45a4d;
+  overflow-y: scroll;
+}
+
+.liRow {
+  padding: 10px 0;
+  margin: 5px 0;
+}
+
+.lap_number {
+  text-transform: capitalize;
+  font: bold 15px Arial;
+}
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
