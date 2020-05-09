@@ -108,14 +108,23 @@ li {
   main styling starts here
 =================================*/
 .timer { margin: 0px 30px 50px; }
+
 .buttons { margin-bottom: 30px; }
+
 .buttons div, .content { position: absolute; }
-.buttons div:nth-of-type(2), .buttons div:nth-of-type(3) { bottom: 35px; }
+
+.buttons div:nth-of-type(1), .buttons div:nth-of-type(3) { bottom: 35px; }
+
 .buttons div:nth-of-type(1) { left: 20%; }
+
 .buttons div:nth-of-type(2) { bottom: 10px; }
+
 .buttons div:nth-of-type(3) { right: 20%; }
+
 .result::-webkit-scrollbar { width: 7px; }
+
 .result::-webkit-scrollbar-thumb { background-color: #02b79f; }
+
 .result::-webkit-scrollbar-track, .result::-webkit-scrollbar-thumb { border-radius: 10px; }
 
 .buttons a:hover::before { 
@@ -160,7 +169,7 @@ li {
   text-indent: -9999px; 
 }
 
-.buttons a::before{
+.buttons a::before {
   border-radius: 50%;
   background-color: #b3d7cd;
   color: #b45a4d;
