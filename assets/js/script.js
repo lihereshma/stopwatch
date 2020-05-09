@@ -72,8 +72,7 @@ function clickReset() {
     button.classList.toggle('start');
   }
   
-	lapsDisplay.innerHTML = "";
-	lapsDisplay.classList.remove('result');
+	lapInfo.innerHTML = lapsDisplay.innerHTML = "";
 }
 
 // Function to create element
